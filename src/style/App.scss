@@ -1,0 +1,45 @@
+$yellow: #FED843;
+
+.app {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+      &:visited {
+        color: black;
+      }
+    }
+    &__logo {
+      display: inline-block;
+      margin: 0.75em;
+      cursor: pointer;
+      &__img {
+        display: inline-block;
+        width: 2.5em;
+        margin-right: 0.75em;
+        vertical-align: middle;
+      }
+      &__txt {
+        display: inline-block;
+        font-family: 'Cedarville Cursive', cursive;
+      }
+    }
+    .navbar {
+      display: inline-block;
+      margin: 0.75em;
+      &__menu {
+        list-style-type: none;
+        display: flex;
+        &__item {
+          margin: 0 1em;
+          cursor: pointer;
+          a:hover {
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+}
